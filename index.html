@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Final Project</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/final-stylesheet.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+
+
+
+</head>
+
+<!--jQuery for mouse animation-->
+
+<body onload = "followMouse();">
+
+     <div class="wrap">
+          <div id="ball"></div>
+     </div>
+
+     <script>
+
+     var $ = document.querySelector.bind(document);
+     var $on = document.addEventListener.bind(document);
+
+     var xmouse, ymouse;
+     $on('mousemove', function (e) {
+          xmouse = e.clientX || e.pageX;
+          ymouse = e.clientY || e.pageY;
+     });
+
+     var ball = $('#ball');
+     var x = void 0,
+          y = void 0,
+          dx = void 0,
+          dy = void 0,
+          tx = 0,
+          ty = 0,
+          key = -1;
+
+     var followMouse = function followMouse() {
+          key = requestAnimationFrame(followMouse);
+
+          if(!x || !y) {
+               x = xmouse;
+               y = ymouse;
+          } else {
+               dx = (xmouse - x) * 0.125;
+               dy = (ymouse - y) * 0.125;
+               if(Math.abs(dx) + Math.abs(dy) < 0.1) {
+                    x = xmouse;
+                    y = ymouse;
+               } else {
+                    x += dx;
+                    y += dy;
+               }
+          }
+          ball.style.left = x + 'px';
+          ball.style.top = y + 'px';
+     };
+
+     </script>
+
+<!--jQuery for hamburger button-->
+       <script
+  src="https://code.jquery.com/jquery-3.4.0.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.menu').click(function(){
+        $('ul').toggleClass('active');
+      })
+    })
+  </script>
+
+    <!--jQuery Hosted Library via Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+<!--JQUERY FOTORAMA LIBRARY BY ARTEM POLIKARPOV-->
+    <script src="js/fotorama-4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/fotorama-4.6.4/fotorama.css">
+
+
+
+  <nav>
+  	<div class="toggle">
+  		<i class="fas fa-bars menu"></i>
+  	</div>
+    <ul>	
+    <li class="name">Ally Emma Satterfield</li>
+      <li><a href="#logo-section">Home</a></li>
+      <li><a href="#website-work-intro">Web Design Portfolio</a></li>
+      <li><a href="http://www.allysatterfield.com/" target="_blank">Other Works Portfolio</a></li>
+      <li><a href="pages/web-design-inspiration.html">Inspiration</a></li>
+    </ul>
+  </nav>
+
+	
+<section id="logo-section" class="whiteblue">
+<div class="about-section">
+<div id="logo">
+	<img id="imglogo" src="img/logo.png" alt="AES-Logo" width="100">
+</div>
+</div>
+</section>
+
+<section id="website-work-intro" class="darkblue">
+  <h4 class="whitebluetext">Web Design Portfolio</h4>
+</section>
+
+<section id="tarot-section" class="medblue">
+  <div class="row-1">
+  <div class="left-column">
+    <a href="pages/project2.html" target="_blank"><img id="project-2-img" src="img/project-2.png" alt="project-2-screenshot" width="100"></a>
+  </div>
+  <div class="right-column">
+   <a href="pages/project2.html" target="_blank"><h1 class="whitebluetext">Image Essay Gallery</h1></a><br>
+    <h2 class="darkbluetext">Project Brief</h2><br>
+    <h3 class="lightbluetext" id="image-essay-gallery-blurb">Interactive photo gallery that uses Fancybox Lightbox and jQuery to give the user a tarot card reading. 24 tarot cards make up 5 different readings, depending on where the user clicks. </h3>
+  </div>
+  </div>
+
+</section>
+
+<section id="travel-section" class="whiteblue">
+   <div class="row-2">
+  <div class="second-left-column">
+   <a href="pages/project1.html" target="_blank"><h1 class="darkbluetext">Narrative Scrolling</h1></a><br>
+    <h2 class="lightbluetext">Project Brief</h2><br>
+    <h3 class="medbluetext">Single page scrolling website that tells user where to go in 2019. Includes tourist locations, hotels, and things to do with links to outside sources containing more information.  </h3>
+  </div>
+  <div class="second-right-column">
+    <a href="pages/project1.html" target="_blank"><img id="project-1-img" src="img/project-1.png" alt="project-1-screenshot" width="100"></a>
+  </div>
+  </div>
+</section>
+
+<section id="exercise-2-section" class="lightblue">
+    <div class="row-3">
+  <div class="third-left-column">
+    <a href="pages/my-name.html" target="_blank"><img id="exercise-2-img" src="img/exercise-2.png" alt="exercise-2-screenshot" width="100"></a>
+  </div>
+  <div class="third-right-column">
+   <a href="pages/my-name.html" target="_blank"><h1 class="medbluetext">Getting to Know U(RL)</h1></a><br>
+    <h2 class="whitebluetext">Project Brief</h2><br>
+    <h3 class="darkbluetext">A simple, multi-page website with a consistent navigation interface as a way of introducing myself. 6 different pages give short descriptions of myself, my background, designs and design studios I admire, and ASCII art.</h3>
+  </div>
+  </div>
+</section>
+
+<section id="exercise-1-section" class="darkblue">
+  <div class="row-4">
+  <div class="fourth-left-column">
+   <a href="pages/just-ascii-about-me.html" target="_blank"><h1 class="whitebluetext">Just ASCII About Me</h1></a><br>
+    <h2 class="medbluetext">Project Brief</h2><br>
+    <h3 class="lightbluetext">Simple site showcasing three hidden ASCII art pieces found in sources of their respective sites. Also showcases my ASCII art, which can be seen in the source.</h3>
+  </div>
+  <div class="fourth-right-column">
+    <a href="pages/just-ascii-about-me.html" target="_blank"><img id="exercise-1-img" src="img/exercise-1.png" alt="exercise-1-screenshot" width="100"></a>
+  </div>
+  </div>
+</section>
+
+<section id="exercise-3-section" class="whiteblue">
+    <div class="row-5">
+  <div class="fifth-left-column">
+    <a href="pages/divart.html" target="_blank"><img id="exercise-3-img" src="img/exercise-3.png" alt="exercise-3-screenshot" width="100"></a>
+  </div>
+  <div class="fifth-right-column">
+   <a href="pages/divart.html" target="_blank"><h1 class="darkbluetext">D for DIV</h1></a><br>
+    <h2 class="lightbluetext">Project Brief</h2><br>
+    <h3 class="medbluetext">Three separate copies of digital art using only HTML5 Semantic Tag DIV elements with background-color, border, height, margin, padding, and width specifications. They also include interactive background-color change elements.</h3>
+  </div>
+  </div>
+</section>
+
+<section id="otherwork" class="medblue">
+  <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-loop="true" data-autoplay="true">
+    <img src="img/poster.png" alt="movie poster image">
+    <img src="img/love.jpg" alt="design titled 'love'">
+    <img src="img/skull.jpg" alt="drawing titled 'bare minimum'">
+    <img src="img/wish.jpg" alt="mixed media piece titled 'make a wish'">
+    <img src="img/collage.jpg" alt="collage titled 'busy city'">
+    <img src="img/game.jpg" alt="board game design">
+    <img src="img/harry.png" alt="digital drawing of Harry Potter">
+    <img src="img/linedry.jpg" alt="mixed media piece titled 'line dry">
+    <img src="img/menu.png" alt="digital copy of menu cover">
+  </div>
+  <div id="otherworktext"><h1 class="whitebluetext" id="checkout">Check out some of my non-web design work!</h1><br>
+  <h2 class="lightbluetext" id="more">More can be found in my <a href="www.allysatterfield.com" target="_blank">Porfolio.</a></h2></div>
+</section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+ASCII Art Here 
+
+  ¬¬¬                  SSSSSSAAAAA                                            
+                     SSSSSSSSSSAAAAAA                                           
+                  SSSSSS      AAAAAAA                                           
+                 SSSSS        AAAAAAAA                                          
+               SSSSS         AAAAAAAAAA                                         
+              SSSSS          AAAAAAAAAA                                         
+             SSSSS          AAAAAAAAAAAA                                        
+             SSSSS          AAAAA  AAAAA                                        
+            SSSSS          AAAAAA   AAAAA                                       
+            SSSSS          AAAAA    AAAAA                                       
+            SSSSS         AAAAAA     AAAAA                                      
+           SSSSSS         AAAAA      AAAAAA                                     
+           SSSSSS        NAAAAN       AAAAA                                     
+           SSSSSS        AAAAA         AAAAA                                    
+           SSSSSS       AAAAA          AAAAAA                                   
+           SSSSSS       AAAAA           AAAAA                                   
+            SSSSSS     AAAAAA           AAAAAA                                  
+            SSSSSSS    AAAAA             AAAAAA                                 
+             SSSSSSS  AAAAA               AAAAA                                 
+              SSSSSSSAAAAAAEEAEAEAEAEAEAEAAAAAAA                                
+                SSSSSAAAAAAEEAEAEAEAEAEAEAEAAAAAASSSS                           
+                    AAAAAAEEE               AAAAASSSSSSS                        
+                    AAAAAAEEE                AAAAA SSSSSSS                      
+                    AAAAAAEEE                AAAAAA  SSSSSSS                    
+                   AAAAAAEEEE                 AAAAAA    SSSSSS                  
+                  ,AAAAAEEEEE                  AAAAAA    SSSSSSS                 
+                  AAAAAAEEEEE                  AAAAAA      SSSSSS                
+                 AAAAAAEEEEEE                   AAAAAN      SSSSSS               
+                 AAAAAAEEEEEE                    AAAAAA     SSSSSS               
+                AAAAAAEEEEEEE                    AAAAAAA     SSSSSS              
+                AAAAAEEEEEEEE                      AAAAA      SSSSSS             
+               AAAAAAEEEEEEEE                      AAAAAA    SSSSSS            
+               AAAAA EEEEEEEE                       AAAAAA    SSSSSS             
+              AAAAAA EEEEEEEE                       AAAAA     SSSSSS            
+              AAAAAA EEEEEEEEEEEEEEEEE               A        SSSSSS            
+                AAA  EEEEEEEEEEEEEEEEE                        SSSSSS            
+                  A  EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                SSSSSS            
+                     EEEEEEEE                                SSSSSS              
+                     EEEEEEEE                               SSSSSS             
+                     EEEEEEEE                              SSSSSS              
+                     EEEEEEEE                             SSSSSS                
+                     EEEEEEEE                           SSSSSSS                 
+                     EEEEEEEE                        SSSSSSSSS                  
+                     EEEEEEEE                SSSSSSSSSSSSSSS                   
+                     EEEEEEEEEEEEEEEEEEEEEEESESESESESESESES                     
+                     EEEEEEEEEEEEEEEEEEEEEESESESESESESESE                        
+                                                                                
+
+
+
+    -->
