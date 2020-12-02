@@ -1,0 +1,630 @@
+* {
+	margin: 0; 
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../img/wood-table.png);
+	background-color: #5b3520;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+div#rug {
+	width: 100vw;
+	height: 100vh;
+	top:  0vh;
+	left: 0vw;
+	background-image: url(../img/rug2.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: fixed;
+
+}
+
+
+
+div#boxbase {
+	background-image: url(../img/box.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 18vw;
+	height: 24.3vh;
+	top: 40vh;
+	left: 40vw;
+}
+
+div#boxcover {
+	background-image: url(../img/box-cover.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 18vw;
+	height: 24.3vh;
+	top: 40vh;
+	left: 40vw;
+
+}
+
+#boxcover:hover {
+	transform: translateX(50px);
+		-ms-transform: translateX(50px);
+		-moz-transform: translateX(50px);
+		-o-transform: translateX(50px);
+		-webkit-transform: translateX(50px);
+	transition: transform 1s;
+		-ms-transition: transform 1s;
+		-moz-transition: transform 1s;
+		-o-transition: transform 1s;
+		-webkit-transition: transform 1s;
+}
+
+div#introtext {
+	background-image: url(../img/welcome-text.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 45vw;
+	height: 10vh;
+	top: -32vh;
+	left: 27vw;
+}
+
+
+
+div#boxtext {
+	background-image: url(../img/text1.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 45vw;
+	height: 10vh;
+	top: -22vh;
+	left: 27vw;
+}
+
+
+
+div#cardtext {
+	background-image: url(../img/cardtext.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 45vw;
+	height: 10vh;
+	top: -22vh;
+	left: 27vw;
+	display: none;
+}
+
+img#click1 {
+	position: absolute;
+	width: 9vw;
+	height: 8vw;
+	top: 40vh;
+	left: 40vw;
+	cursor: pointer;
+}
+
+img#click2 {
+	position: absolute;
+	width: 9vw;
+	height: 8vw;
+	top: 40vh;
+	left: 49vw;
+	cursor: pointer;
+}
+
+img#click3 {
+	position: absolute;
+	width: 9vw;
+	height: 7.6vw;
+	top: 52.5vh;
+	left: 40vw;
+	cursor: pointer;
+}
+
+img#click4 {
+	position: absolute;
+	width: 9vw;
+	height: 7.6vw;
+	top: 52.5vh;
+	left: 49vw;
+	cursor: pointer;
+}
+
+button#close {
+	background-color: black;
+	border: white;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 24px;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+		-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		-webkit-transition-duration: 0.4s;
+		-ms-transition-duration: 0.4s;
+	position: absolute;
+	top: 90vh;
+	left: 88vw;
+	box-shadow: 0 8px 16px 0 #ffffff, 0 6px 20px 0 #ffffff;
+	cursor: pointer;
+
+}
+
+button#close:hover {
+	background-color: white;
+	color: black;
+}
+
+/*CARD BACKS*/
+
+figure#back1 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 13vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back2 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back3 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 10vw;
+	display: none;
+
+}
+
+figure#back4 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back5 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 67vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back6 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back7 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 78vw;
+	display: none;
+
+}
+
+figure#back8 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back11 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 13vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back12 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back13 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 10vw;
+	display: none;
+
+}
+
+figure#back14 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back15 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 67vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back16 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back17 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 78vw;
+	display: none;
+
+}
+
+figure#back18 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back21 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 13vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back22 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back23 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 10vw;
+	display: none;
+
+}
+
+figure#back24 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back25 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 67vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back26 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back27 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 78vw;
+	display: none;
+
+}
+
+figure#back28 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back31 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 13vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back32 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back33 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 10vw;
+	display: none;
+
+}
+
+figure#back34 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 25vw;
+	display: none;
+
+}
+
+figure#back35 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 67vh;
+	left: 44vw;
+	display: none;
+
+}
+
+figure#back36 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 65vh;
+	left: 63vw;
+	display: none;
+
+}
+
+figure#back37 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 40vh;
+	left: 78vw;
+	display: none;
+
+}
+
+figure#back38 {
+	background-image: url(../img/card.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 10vw;
+	height: 24vh;
+	top: 15vh;
+	left: 63vw;
+	display: none;
+
+}
+
+
+/*KEYFRAME ANIMATIONS*/
+
+
+@keyframes introtext {
+	0%	{opacity: 0;}
+	50%	{opacity: 1;}
+	100%	{opacity: 0;}
+}
+
+.introtext {
+	animation-name: introtext;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes boxtext {
+	0% {opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+.boxtext {
+	animation-name: boxtext;
+	animation-duration: 1s;
+	animation-delay: 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes boxcover {
+	0%	{left: 40vw;}
+	20% {left: 45vw;}
+	30%	{left: 40vw;}
+	40% {left: 45vw;}
+	50%	{left: 40vw;}
+	60% {left: 45vw;}
+	70%	{left: 40vw;}
+	80% {left: 45vw;}
+	100%	{left: 40vw;}
+	}
+
+.boxcover {
+	animation-name: boxcover;
+	animation-duration: 3s;
+	animation-delay: 5s;
+}

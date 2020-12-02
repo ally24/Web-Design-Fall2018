@@ -1,0 +1,510 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header#canvas {
+	width: 514px;
+	height: 714px;
+	background-color: #ab6430;
+	position: absolute;
+	left: 25%;
+
+}
+
+section#purple1 {
+	width: 501px;
+	height: 34px;
+	margin-top: 7px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #392a7d;
+}
+
+section#purple2 {
+	width: 501px;
+	height: 33px;
+	margin-top: 41px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #3f3282;
+}
+
+article#red1 {
+	width: 33px;
+	height: 33px;
+	margin-top: 0px;
+	margin-left: 235px;
+	position: absolute;
+	background-color: #a92b1c
+}
+
+section#purple3 {
+	width: 501px;
+	height: 34px;
+	margin-top: 74px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #4b3887;
+}
+
+article#red2 {
+	width: 100px;
+	height: 34px;
+	margin-top: 0px;
+	margin-left: 201px;
+	position: absolute;
+	background-color: #b52719
+}
+
+section#purple4 {
+	width: 501px;
+	height: 33px;
+	margin-top: 108px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #5c468f;
+}
+
+article#red3 {
+	width: 165.5px;
+	height: 33px;
+	margin-top: 0px;
+	margin-left: 168px;
+	position: absolute;
+	background-color: #c32a1a;
+}
+
+section#purple5 {
+	width: 501px;
+	height: 34px;
+	margin-top: 141px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #634e93;
+}
+
+article#red4 {
+	width: 231px;
+	height: 34px;
+	margin-left: 135px;
+	position: absolute;
+	background-color: #d02619
+}
+
+section#purple6 {
+	width: 501px;
+	height: 33px;
+	margin-top: 175px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #6c5798;
+}
+
+article#red5 {
+	width: 298px;
+	height: 33px;
+	margin-left: 102px;
+	position: absolute;
+	background-color: #da2618;
+}
+
+section#purple7 {
+	width: 501px;
+	height: 34px;
+	margin-top: 208px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #8168a2;
+}
+
+article#red6 {
+	width: 365px;
+	height: 34px;
+	margin-left: 68px;
+	position: absolute;
+	background-color: #e03517
+}
+
+section#purple8 {
+	width: 501px;
+	height: 33px;
+	margin-top: 242px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #977caf;
+}
+
+article#red7 {
+	width: 432px;
+	height: 33px;
+	margin-left: 33px;
+	position: absolute;
+	background-color: #e24222;
+}
+
+section#purple9 {
+	width: 501px;
+	height: 33px;
+	margin-top: 275px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #866da7;
+}
+
+article#red8 {
+	width: 365px;
+	height: 33px;
+	margin-left: 68px;
+	position: absolute;
+	background-color: #e03517;
+}
+
+section#purple10 {
+	width: 501px;
+	height: 33px;
+	margin-top: 308px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #685394;
+}
+
+article#red9 {
+	width: 298px;
+	height: 33px;
+	margin-left: 102px;
+	position: absolute;
+	background-color: #da2618;
+}
+
+section#middle {
+	width: 501px;
+	height: 33px;
+	margin-top: 341px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #44579b;
+}
+
+section#blue1 {
+	width: 501px;
+	height: 33px;
+	margin-top: 374px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #0d64a7;
+}
+
+article#pink1 {
+	width: 298px;
+	height: 33px;
+	margin-left: 102px;
+	position: absolute;
+	background-color: #d8254d;
+}
+
+section#blue2 {
+	width: 501px;
+	height: 33px;
+	margin-top: 407px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #2071b3;
+}
+
+article#pink2 {
+	width: 365px;
+	height: 33px;
+	margin-left: 68px;
+	position: absolute;
+	background-color: #e02461;
+}
+
+section#blue3 {
+	width: 501px;
+	height: 34px;
+	margin-top: 440px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #3181be;
+}
+
+article#pink3 {
+	width: 432px;
+	height: 34px;
+	margin-left: 33px;
+	position: absolute;
+	background-color: #e32275;
+}
+
+section#blue4 {
+	width: 501px;
+	height: 33px;
+	margin-top: 474px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #2272b1;
+}
+
+article#pink4 {
+	width: 365px;
+	height: 33px;
+	margin-left: 68px;
+	position: absolute;
+	background-color: #e02461
+}
+
+section#blue5 {
+	width: 501px;
+	height: 33px;
+	margin-top: 507px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #1968aa;
+}
+
+article#pink5 {
+	width: 298px;
+	height: 33px;
+	margin-left: 102px;
+	position: absolute;
+	background-color: #d8254d;
+}
+
+section#blue6 {
+	width: 501px;
+	height: 32.5px;
+	margin-top: 540px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #025b9f;
+}
+
+article#pink6 {
+	width: 231px;
+	height: 32.5px;
+	margin-left: 135px;
+	position: absolute;
+	background-color: #d32349;
+}
+
+section#blue7 {
+	width: 501px;
+	height: 32.5px;
+	margin-top: 573px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #075198;
+}
+
+article#pink7 {
+	width: 165.5px;
+	height: 32.5px;
+	margin-top: 0px;
+	margin-left: 168px;
+	position: absolute;
+	background-color: #cc243d;
+}
+
+section#blue8 {
+	width: 501px;
+	height: 33px;
+	margin-top: 606px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #124793;
+}
+
+article#pink8 {
+	width: 100px;
+	height: 33px;
+	margin-top: 0px;
+	margin-left: 201px;
+	position: absolute;
+	background-color: #cc2536;
+}
+
+section#blue9 {
+	width: 501px;
+	height: 33px;
+	margin-top: 639px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #1b418c;
+}
+
+article#pink9 {
+	width: 33px;
+	height: 33px;
+	margin-top: 0px;
+	margin-left: 235px;
+	position: absolute;
+	background-color: #c22339;
+}
+
+section#blue10 {
+	width: 501px;
+	height: 33px;
+	margin-top: 672px;
+	margin-left: 5px;
+	position: absolute;
+	background-color: #213b86;
+}
+
+/*HOVERS*/
+
+#purple1:hover {
+	background-color: #213b86;
+}
+
+#purple2:hover {
+	background-color: #1b418c;
+}
+
+#purple3:hover {
+	background-color: #124793;
+}
+
+#purple4:hover {
+	background-color: #075198;
+}
+
+#purple5:hover {
+	background-color: #025b9f
+}
+
+#purple6:hover {
+	background-color: #1968aa;
+}
+
+#purple7:hover {
+	background-color: #2272b1;
+}
+
+#purple8:hover {
+	background-color: #3181be;
+}
+
+#purple9:hover {
+	background-color: #2071b3;
+}
+
+#purple10:hover {
+	background-color: #0d64a7;
+}
+
+#blue1: hover {
+	background-color: #685394;
+}
+
+#blue2:hover {
+	background-color: #866da7;
+}
+
+#blue3:hover {
+	background-color: #977caf;
+}
+
+#blue4:hover {
+	background-color: #8168a2;
+}
+
+#blue5:hover {
+	background-color: #6c5798;
+}
+
+#blue6:hover {
+	background-color: #634e93;
+}
+
+#blue7:hover {
+	background-color: #5c468f;
+}
+
+#blue8:hover {
+	background-color: #4b3887;
+}
+
+#blue9:hover {
+	background-color: #3f3282
+}
+
+#blue10:hover {
+	background-color: #392a7d
+}
+
+#red1:hover {
+	background-color: #c22339;
+
+}
+
+#red2:hover {
+	background-color: #cc2536
+}
+
+#red3:hover {
+	background-color: #cc243d;
+}
+
+#red4:hover {
+	background-color: #d32349;
+}
+
+#red5:hover {
+	background-color: #d8254d;
+}
+
+#red6:hover {
+	background-color: #e02461;
+}
+
+#red7:hover {
+	background-color: #e32275;
+}
+
+#red8:hover {
+	background-color: #e02461;
+}
+
+#red9:hover {
+	background-color: #d8254d;
+}
+
+#pink1:hover {
+	background-color: #da2618;
+}
+
+#pink2:hover {
+	background-color: #e03517;
+}
+
+#pink3:hover {
+	background-color: #e24222;
+}
+
+#pink4:hover {
+	background-color: #e03517;
+}
+
+#pink5:hover {
+	background-color: #da2618;
+}
+
+#pink6:hover {
+	background-color: #d02619;
+}
+
+#pink7:hover {
+	background-color: #c32a1a;
+}
+
+#pink8:hover {
+	background-color: #b52719;
+}
+
+#pink9:hover {
+	background-color: #a92b1c;
+}

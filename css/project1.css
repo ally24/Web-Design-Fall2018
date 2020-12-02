@@ -1,0 +1,994 @@
+* {
+	margin: 0; 
+	padding: 0;
+	text-decoration: none;
+}
+
+header,section {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	max-width: 100%;
+	background-color: #89cff0;
+}
+
+/*NAV BAR*/
+
+nav {
+	position: fixed;
+	top: 0vh;
+	left: 0vw;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.7vw;
+	z-index: 1000;
+	font-style: italic;
+	
+
+}
+
+ul#navlist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	opacity: .6;
+}
+
+li.navlist {
+	float: left;
+
+}
+
+li.navlist a {
+	display: inline;
+	color: black;
+	text-align: center;
+	padding: 1vw;
+	text-decoration: none;
+}
+
+li.navlist a:hover {
+	background-color: #111111;
+	text-decoration-color: white;
+}
+
+ul#lalist, ul#brazillist, ul#capetownlist, ul#cairolist, ul#londonlist, ul#bangkoklist, ul#sydneylist, ul#boraboralist {
+	display: block;
+	list-style-type: disc;
+	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
+	margin-left: 0.5vw;
+	margin-right: 0;
+	padding-left: 1vw;
+
+
+}
+
+
+
+/*TOP SECTION*/
+
+#plane {
+	width: 20vw;
+	z-index: 100;
+	float: left;
+
+}
+
+#planetwo {
+	width: 20vw;
+	float: right;
+}
+
+div#where {
+	display: block;
+	height: 80vh;
+	width: 57vw;
+	padding: 1vw;
+	background-color: rgba(255,255,255,0.5);
+	font-family: 'Marck Script', cursive;
+	font-size: 13vw;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 5.15vw;
+	margin-left: 20vw;
+
+}
+
+.list {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1vw;
+	
+}
+
+
+
+#world {
+	width: 20vw;
+}
+
+
+
+
+/*LOS ANGELES BEGIN SECTION*/
+
+section#losangeles {
+	background-image: url("../img/los-angeles.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+	
+}
+
+
+div#losangeleslegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+
+}
+
+#la-map, #rio-map, #capetown-map, #cairo-map, #london-map, #bangkok-map, #sydney-map, #borabora-map {
+	width: 20vw;
+
+}
+
+h1 {
+	font-family: 'Marck Script', cursive;
+	font-size: 3.3vw;
+	font-weight: 700;
+	text-align: center;
+	transform: rotate(-35deg);
+		-ms-transform: rotate(-35deg);
+		-moz-transform: rotate(-35deg);
+		-o-transform: rotate(-35deg);
+		-webkit-transform: rotate(-35deg);
+	transition: transform 3s;
+		-ms-transition: transform 3s;
+		-moz-transition: transform 3s;
+		-o-transition: transform 3s;
+		-webkit-transition: transform 3s;
+
+}
+
+h1:hover {
+	transform: rotate(35deg);
+		-ms-transform: rotate(35deg);
+		-moz-transform: rotate(35deg);
+		-o-transform: rotate(35deg);
+		-webkit-transform: rotate(35deg);
+}
+
+
+
+.droppin1 {
+	left: 30vw;
+	top: -75vh;
+	position: relative;
+	background: none;
+}
+
+.droppin1:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin2 {
+	left: 75vw;
+	top: -80vh;
+	position: relative;
+	background: none;
+}
+
+.droppin2:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin3 {
+	left: 81vw;
+	top: -35vh;
+	position: relative;
+	background: none;
+}
+
+.droppin3:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+
+/*BRAZIL SECTION*/
+
+
+section#brazil {
+	background-image: url("../img/brazil.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#brazillegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin4 {
+	left: 30vw;
+	top: -46vh;
+	position: relative;
+	background: none;
+}
+
+.droppin4:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin5 {
+	left: 40vw;
+	top: -80vh;
+	position: relative;
+	background: none;
+}
+
+.droppin5:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin6 {
+	left: 50vw;
+	top: -30vh;
+	position: relative;
+	background: none;
+}
+
+.droppin6:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin7 {
+	left: 80vw;
+	top: -30vh;
+	position: relative;
+	background: none;
+}
+
+.droppin7:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin8 {
+	left: 55vw;
+	top: -80vh;
+	position: relative;
+	background: none;
+}
+
+.droppin8:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+/*CAPETOWN SECTION*/
+
+
+section#capetown {
+	background-image: url("../img/capetown.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#capetownlegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin9 {
+	left: 45vw;
+	top: -80vh;
+	position: relative;
+	background: none;
+}
+
+.droppin9:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin10 {
+	left: 27vw;
+	top: -25vh;
+	position: relative;
+	background: none;
+}
+
+.droppin10:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin11 {
+	left: 80vw;
+	top: -35vh;
+	position: relative;
+	background: none;
+}
+
+.droppin11:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin12 {
+	left: 81vw;
+	top: -81vh;
+	position: relative;
+	background: none;
+}
+
+.droppin12:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin13 {
+	left: 60vw;
+	top: -78vh;
+	position: relative;
+	background: none;
+}
+
+.droppin13:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+/*CAIRO SECTION*/
+
+section#egypt {
+	background-image: url("../img/cairo.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#egyptlegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin14 {
+	left: 30vw;
+	top: -25vh;
+	position: relative;
+	background: none;
+}
+
+.droppin14:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin15 {
+	left: 56vw;
+	top: -17vh;
+	position: relative;
+	background: none;
+}
+
+.droppin15:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin16 {
+	left: 65vw;
+	top: -30vh;
+	position: relative;
+	background: none;
+}
+
+.droppin16:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin17 {
+	left: 75vw;
+	top: -45vh;
+	position: relative;
+	background: none;
+}
+
+.droppin17:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin18 {
+	left: 20vw;
+	top: -65vh;
+	position: relative;
+	background: none;
+}
+
+.droppin18:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin19 {
+	left: 46vw;
+	top: -57vh;
+	position: relative;
+	background: none;
+}
+
+.droppin19:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+/*LONDON*/
+
+section#london {
+	background-image: url("../img/london.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#londonlegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin20 {
+	left: 28vw;
+	top: -25vh;
+	position: relative;
+	background: none;
+}
+
+.droppin20:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin21 {
+	left: 92vw;
+	top: -65vh;
+	position: relative;
+	background: none;
+}
+
+.droppin21:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin22 {
+	left: 78vw;
+	top: -75vh;
+	position: relative;
+	background: none;
+}
+
+.droppin22:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin23 {
+	left: 55vw;
+	top: -48vh;
+	position: relative;
+	background: none;
+}
+
+.droppin23:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin24 {
+	left: 30vw;
+	top: -90vh;
+	position: relative;
+	background: none;
+}
+
+.droppin24:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+/*THAILAND SECTION*/
+
+section#thailand {
+	background-image: url("../img/bangkok.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#thailandlegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin25 {
+	left: 30vw;
+	top: -35vh;
+	position: relative;
+	background: none;
+}
+
+.droppin25:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin26 {
+	left: 80vw;
+	top: -55vh;
+	position: relative;
+	background: none;
+}
+
+.droppin26:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin27 {
+	left: 55vw;
+	top: -30vh;
+	position: relative;
+	background: none;
+}
+
+.droppin27:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin28 {
+	left: 25vw;
+	top: -80vh;
+	position: relative;
+	background: none;
+}
+
+.droppin28:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin29 {
+	left: 47vw;
+	top: -75vh;
+	position: relative;
+	background: none;
+}
+
+.droppin29:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+/*SYDNEY SECTION*/
+
+
+section#sydney {
+	background-image: url("../img/sydney.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#sydneylegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin30 {
+	left: 70vw;
+	top: -85vh;
+	position: relative;
+	background: none;
+}
+
+.droppin30:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin31 {
+	left: 65vw;
+	top: -35vh;
+	position: relative;
+	background: none;
+}
+
+.droppin31:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin32 {
+	left: 80vw;
+	top: -60vh;
+	position: relative;
+	background: none;
+}
+
+.droppin32:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin33 {
+	left: 20vw;
+	top: -40vh;
+	position: relative;
+	background: none;
+}
+
+.droppin33:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+/*BORA BORA SECTION*/
+
+
+section#borabora {
+	background-image: url("../img/borabora.png");
+	background-repeat: no-repeat;
+	background-size: 80vw 100vh;
+	background-position: right;
+}
+
+div#boraboralegend {
+	width: 20vw;
+	height: 100vh;
+	background-color: #89cff0;
+}
+
+.droppin34 {
+	left: 65vw;
+	top: -30vh;
+	position: relative;
+	background: none;
+}
+
+.droppin34:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin35 {
+	left: 75vw;
+	top: -55vh;
+	position: relative;
+	background: none;
+}
+
+.droppin35:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin36 {
+	left: 35vw;
+	top: -15vh;
+	position: relative;
+	background: none;
+}
+
+.droppin36:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin37 {
+	left: 25vw;
+	top: -45vh;
+	position: relative;
+	background: none;
+}
+
+.droppin37:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin38 {
+	left: 25vw;
+	top: -80vh;
+	position: relative;
+	background: none;
+}
+
+.droppin38:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin39 {
+	left: 48vw;
+	top: -93vh;
+	position: relative;
+	background: none;
+}
+
+.droppin39:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+.droppin40 {
+	left: 70vw;
+	top: -90vh;
+	position: relative;
+	background: none;
+}
+
+.droppin40:hover {
+	transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+}
+
+
+div#divend {
+	display: block;
+	height: 100vh;
+	width: 57vw;
+	padding: 1vw;
+	background-color: rgba(255,255,255,0.5);
+	font-family: 'Marck Script', cursive;
+	font-size: 13vw;
+	font-weight: 700;
+	text-align: center;
+	margin-left: 20vw;
+	transition: transform 3s;
+		-ms-transition: transform 3s;
+		-moz-transition: transform 3s;
+		-o-transition: transform 3s;
+		-webkit-transition: transform 3s;
+
+}
+
+div#divend:hover {
+	transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+}
+
+
+
+.lastairplane {
+	width: 30vw;
+	transform: rotate(335deg);
+}
+
+/*KEYFRAMES*/
+
+@keyframes airplane {
+	0% {transform: translate(30vw);}
+	100% {transform: translate(0);}
+}
+
+.airplane {
+	animation-name: airplane;
+	animation-duration: 3s;
+		-ms-animation-name: airplane;
+		-ms-animation-duration: 3s;
+		-moz-animation-name: airplane;
+		-moz-animation-duration: 3s;
+		-o-animation-name: airplane;
+		-o-animation-duration: 3s;
+		-webkit-animation-name: airplane;
+		-webkit-animation-duration: 3s;
+}
+
+@keyframes airplanetwo {
+	0% {transform: translate(-30vw);}
+	100% {transform: translate(0);}
+}
+
+.airplanetwo {
+	animation-name: airplanetwo;
+	animation-duration: 3s;
+		-ms-animation-name: airplanetwo;
+		-ms-animation-duration: 3s;
+		-moz-animation-name: airplanetwo;
+		-moz-animation-duration: 3s;
+		-o-animation-name: airplanetwo;
+		-o-animation-duration: 3s;
+		-webkit-animation-name: airplanetwo;
+		-webkit-animation-duration: 3s;
+}
+
+@keyframes where {
+	0% {opacity: 0}
+	100% {opacity: 100}
+}
+
+#where {
+	animation-name: where;
+	animation-duration: 3s;
+		-ms-animation-name: where;
+		-ms-animation-duration: 3s;
+		-moz-animation-name: where;
+		-moz-animation-duration: 3s;
+		-o-animation-name: where;
+		-o-animation-duration: 3s;
+		-webkit-animation-name: where;
+		-webkit-animation-duration: 3s;
+}
+
+@keyframes navlist {
+	0% {padding-top: 7vh}
+	100% {padding-top: 0}
+}
+
+#navlist {
+	animation-name: navlist;
+	animation-duration: 3s;
+		-ms-animation-name: navlist;
+		-ms-animation-duration: 3s;
+		-moz-animation-name: navlist;
+		-moz-animation-duration: 3s;
+		-o-animation-name: navlist;
+		-o-animation-duration: 3s;
+		-webkit-animation-name: navlist;
+		-webkit-animation-duration: 3s;
+}
+
+
+
+
+
+
+
+
+
+

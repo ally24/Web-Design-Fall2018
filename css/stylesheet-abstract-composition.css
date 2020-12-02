@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+header#canvas {
+	width: 61vw;
+	height: 40.5vw;
+	background-color: red;
+}
+
+section {
+	width: 16.6666666%;
+	height: 100%;
+	float: left;
+
+}
+
+article {
+	width: 60%;
+	height: 80.5%;
+	margin-left: 21%;
+	margin-top: 40%;
+}
+
+figure {
+	width: 16%;
+	height: 97%;
+	float: left;
+	margin-top: 8%;
+	margin-left: 7%;
+}
+
+/*CSS NAMED COLOR CLASSES*/
+
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.limegreen {
+	background-color: limegreen;
+}
+
+.cyan {
+	background-color: cyan;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.black {
+	background-color: black;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.pink {
+	background-color: pink;
+}
+
+
+

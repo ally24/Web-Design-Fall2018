@@ -1,0 +1,88 @@
+/* ##########
+#######*******
+&&&&&& */
+
+
+	body {
+
+		background-color: turquoise;
+		background-image: url("img/ocean.jpg");
+		background-repeat: no-repeat;
+
+	}
+
+	h1 {
+		font-family: "Papyrus", Monaco, monospace;
+		font-size: 48pt;
+		color: black;
+		text-align: center;
+		font-variant: small-caps;
+	}
+
+	h2 {
+		font-family: "Courier New", Monaco, monospace;
+		font-size: 16pt;
+		color: dimgrey;
+		text-align: center;
+	}
+
+	body {
+		font-family: "Courier New Bold", Monaco, monospace;
+		font-size: 14pt;
+		color: black;
+		text-align: center;
+		text-shadow: 1px 0.5px black;
+
+	}
+
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  opacity: .6;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: inline;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+	.column {
+
+		float: left;
+		width: 18%;
+		padding: 5px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	
+
+
+
+
+
+	
+		
+
+
+
+	
