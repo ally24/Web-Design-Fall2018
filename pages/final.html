@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Final Project</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/final-stylesheet.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900" rel="stylesheet">
+
+</head>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.0.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu').click(function(){
+  			$('ul').toggleClass('active');
+  		})
+  	})
+  </script>
+
+<body onload = "followMouse();">
+
+     <div class="wrap">
+          <div id="ball"></div>
+     </div>
+
+     <script type="text/javascript">
+
+     var $ = document.querySelector.bind(document);
+     var $on = document.addEventListener.bind(document);
+
+     var xmouse, ymouse;
+     $on('mousemove', function (e) {
+          xmouse = e.clientX || e.pageX;
+          ymouse = e.clientY || e.pageY;
+     });
+
+     var ball = $('#ball');
+     var x = void 0,
+          y = void 0,
+          dx = void 0,
+          dy = void 0,
+          tx = 0,
+          ty = 0,
+          key = -1;
+
+     var followMouse = function followMouse() {
+          key = requestAnimationFrame(followMouse);
+
+          if(!x || !y) {
+               x = xmouse;
+               y = ymouse;
+          } else {
+               dx = (xmouse - x) * 0.125;
+               dy = (ymouse - y) * 0.125;
+               if(Math.abs(dx) + Math.abs(dy) < 0.1) {
+                    x = xmouse;
+                    y = ymouse;
+               } else {
+                    x += dx;
+                    y += dy;
+               }
+          }
+          ball.style.left = x + 'px';
+          ball.style.top = y + 'px';
+     };
+
+     </script>
+
+  <nav>
+  	<div class="toggle">
+  		<i class="fas fa-bars menu"></i>
+  	</div>
+    <ul>	
+    <li class="name">Ally Satterfield</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+	
+<section id="logo-section">
+<div id="logo">
+	<img id="imglogo" src="img/logo.png" alt="AES-Logo" width="100%">
+</div>
+</section>
+
+<section id="web-design">
+	
+</section>
+
+<section id="3"></section>
+<section id="4"></section>
+<section id="5"></section>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+ASCII Art Here 
+
+  ¬¬¬                  SSSSSSAAAAA                                            
+                     SSSSSSSSSSAAAAAA                                           
+                  SSSSSS      AAAAAAA                                           
+                 SSSSS        AAAAAAAA                                          
+               SSSSS         AAAAAAAAAA                                         
+              SSSSS          AAAAAAAAAA                                         
+             SSSSS          AAAAAAAAAAAA                                        
+             SSSSS          AAAAA  AAAAA                                        
+            SSSSS          AAAAAA   AAAAA                                       
+            SSSSS          AAAAA    AAAAA                                       
+            SSSSS         AAAAAA     AAAAA                                      
+           SSSSSS         AAAAA      AAAAAA                                     
+           SSSSSS        NAAAAN       AAAAA                                     
+           SSSSSS        AAAAA         AAAAA                                    
+           SSSSSS       AAAAA          AAAAAA                                   
+           SSSSSS       AAAAA           AAAAA                                   
+            SSSSSS     AAAAAA           AAAAAA                                  
+            SSSSSSS    AAAAA             AAAAAA                                 
+             SSSSSSS  AAAAA               AAAAA                                 
+              SSSSSSSAAAAAAEEAEAEAEAEAEAEAAAAAAA                                
+                SSSSSAAAAAAEEAEAEAEAEAEAEAEAAAAAASSSS                           
+                    AAAAAAEEE               AAAAASSSSSSS                        
+                    AAAAAAEEE                AAAAA SSSSSSS                      
+                    AAAAAAEEE                AAAAAA  SSSSSSS                    
+                   AAAAAAEEEE                 AAAAAA    SSSSSS                  
+                  ,AAAAAEEEEE                  AAAAAA    SSSSSSS                 
+                  AAAAAAEEEEE                  AAAAAA      SSSSSS                
+                 AAAAAAEEEEEE                   AAAAAN      SSSSSS               
+                 AAAAAAEEEEEE                    AAAAAA     SSSSSS               
+                AAAAAAEEEEEEE                    AAAAAAA     SSSSSS              
+                AAAAAEEEEEEEE                      AAAAA      SSSSSS             
+               AAAAAAEEEEEEEE                      AAAAAA    SSSSSS            
+               AAAAA EEEEEEEE                       AAAAAA    SSSSSS             
+              AAAAAA EEEEEEEE                       AAAAA     SSSSSS            
+              AAAAAA EEEEEEEEEEEEEEEEE               A        SSSSSS            
+                AAA  EEEEEEEEEEEEEEEEE                        SSSSSS            
+                  A  EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                 SSSSSS            
+                     EEEEEEEE                                SSSSSS            
+                     EEEEEEEE                                SSSSSS              
+                     EEEEEEEE                               SSSSSS             
+                     EEEEEEEE                              SSSSSS              
+                     EEEEEEEE                             SSSSSS                
+                     EEEEEEEE                           SSSSSSS                 
+                     EEEEEEEE                        SSSSSSSSS                  
+                     EEEEEEEE                SSSSSSSSSSSSSSS                   
+                     EEEEEEEEEEEEEEEEEEEEEEESESESESESESESES                     
+                     EEEEEEEEEEEEEEEEEEEEEESESESESESESESE                        
+                                                                                
+
+
+
+    -->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>jQuery Stellar Parallax</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet-stellar-parallax.css">
+	
+	<!--jQuery Hosted Library via Google CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<!--jQuery Stellar Parallax by Mark Dagliesh--> 
+	<script type="text/javascript" src="../js/stellar.js-master/jquery.stellar.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){$(window).stellar();
+		});
+		
+</script>
+</head>
+<body>
+
+	<figure data-stellar-ratio="-1" id="figure-one" class="red">-1</figure>
+	<figure data-stellar-ratio="0" id="figure-two" class="orange">0</figure>
+	<figure data-stellar-ratio="1" id="figure-three" class="yellow">1</figure>
+	<figure data-stellar-ratio="2" id="figure-four" class="green">2</figure>
+
+	<section data-stellar-background-ratio="-1"></section>
+	<section data-stellar-background-ratio="0"></section>
+	<section data-stellar-background-ratio="1"></section>
+	<section data-stellar-background-ratio="2"></section>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Project Two: Photo Gallery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/project2.css">
+
+<!--jQuery Library Hosted Locally-->
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<!--jQuery Hosted Library via CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--JQuery Actions, Events, and Methods-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button#click1button").click(function(){
+				$("#back1, #back2, #back3, #back4, #back5, #back6, #back7, #back8").show(1000);
+				$("#back11, #back12, #back13, #back14, #back15, #back16, #back17, #back18").hide();
+				$("#back21, #back22, #back23, #back24, #back25, #back26, #back27, #back28").hide();
+				$("#back31, #back32, #back33, #back34, #back35, #back36, #back37, #back38").hide();
+				$("#boxtext").hide();
+				$("#cardtext").show(1000);
+				$("[data-fancybox]").fancybox({
+					loop : true
+				});
+				
+			});
+
+			$("button#click2button").click(function(){
+				$("#back11, #back12, #back13, #back14, #back15, #back16, #back17, #back18").show(1000);
+				$("#back1, #back2, #back3, #back4, #back5, #back6, #back7, #back8").hide();
+				$("#back21, #back22, #back23, #back24, #back25, #back26, #back27, #back28").hide();
+				$("#back31, #back32, #back33, #back34, #back35, #back36, #back37, #back38").hide();
+				$("#boxtext").hide();
+				$("#cardtext").show(1000);
+				$("[data-fancybox]").fancybox({
+					loop : true
+				});
+			
+			});
+
+			$("button#click3button").click(function(){
+				$("#back21, #back22, #back23, #back24, #back25, #back26, #back27, #back28").show(1000);
+				$("#back1, #back2, #back3, #back4, #back5, #back6, #back7, #back8").hide();
+				$("#back11, #back12, #back13, #back14, #back15, #back16, #back17, #back18").hide();
+				$("#back31, #back32, #back33, #back34, #back35, #back36, #back37, #back38").hide();
+				$("#boxtext").hide();
+				$("#cardtext").show(1000);
+				$("[data-fancybox]").fancybox({
+					loop : true
+				});
+				
+			});
+
+			$("button#click4button").click(function(){
+				$("#back31, #back32, #back33, #back34, #back35, #back36, #back37, #back38").show(1000);
+				$("#back1, #back2, #back3, #back4, #back5, #back6, #back7, #back8").hide();
+				$("#back11, #back12, #back13, #back14, #back15, #back16, #back17, #back18").hide();
+				$("#back21, #back22, #back23, #back24, #back25, #back26, #back27, #back28").hide();
+				$("#boxtext").hide();
+				$("#cardtext").show(1000);
+				$("[data-fancybox]").fancybox({
+					loop : true
+				});
+			
+			});
+
+			$("button#close").click(function(){
+				$("#back1, #back2, #back3, #back4, #back5, #back6, #back7, #back8, #back11, #back12, #back13, #back14, #back15, #back16, #back17, #back18, #back21, #back22, #back23, #back24, #back25, #back26, #back27, #back28, #back31, #back32, #back33, #back34, #back35, #back36, #back37, #back38").hide();
+				$("#boxtext").show();
+				$("#cardtext").hide();
+		
+			});
+
+
+		});
+
+	</script>
+
+	<!--JQUERY FANCYBOX LIGHTBOX BY JANIS SKARNELIS-->
+
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript" src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+			});
+		</script>
+
+	
+
+
+</head>
+<body>
+
+<div id="rug">
+
+<div id="boxbase"></div>
+
+<div id="boxtext" class="boxtext"></div>
+<div id="cardtext"></div>
+<div id="introtext" class="introtext"></div>
+
+
+<div id="boxcover" class="boxcover"></div>
+
+<button id="click1button">
+<img src="../img/button.png" id="click1" alt="invisible button">
+</button>
+
+<button id="click2button">
+<img src="../img/button.png" id="click2" alt="invisible button">
+</button>
+
+<button id="click3button">
+<img src="../img/button.png" id="click3" alt="invisible button">
+</button>
+
+<button id="click4button">
+<img src="../img/button.png" id="click4" alt="invisible button">
+</button>
+
+<button id="close">Restart</button>
+
+
+
+<a class="fancybox" data-fancybox="gallery" href="../img/time.png"><figure id="back1"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/the-devil.png"><figure id="back2"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/the-moon.png" ><figure id="back3"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/knight-of-swords.png"><figure id="back4"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/justice.png"><figure id="back5"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/thewheeloffortune.png"><figure id="back6"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/the-hermit.png"><figure id="back7"></figure></a>
+<a class="fancybox" data-fancybox="gallery" href="../img/the-magician.png"><figure id="back8"></figure></a>
+
+<a class="fancybox" data-fancybox="gallery1" href="../img/the-fool.png"><figure id="back11"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/the-judgment.png"><figure id="back12"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/death.png"><figure id="back13"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/queen-of-pentacles.png"><figure id="back14"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/strength.png"><figure id="back15"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/ace-of-coins.png"><figure id="back16"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/the-pope.png"><figure id="back17"></figure></a>
+<a class="fancybox" data-fancybox="gallery1" href="../img/the-sun.png"><figure id="back18"></figure></a>
+
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-temperance.png"><figure id="back21"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-chariot.png"><figure id="back22"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-emperor.png"><figure id="back23"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/three-of-cups.png"><figure id="back24"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-star.png"><figure id="back25"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-lovers.png"><figure id="back26"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-high-priestess.png"><figure id="back27"></figure></a>
+<a class="fancybox" data-fancybox="gallery2" href="../img/the-tower.png"><figure id="back28"></figure></a>
+
+<a class="fancybox" data-fancybox="gallery3" href="../img/the-empress.png"><figure id="back31"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/time.png"><figure id="back32"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/the-fool.png"><figure id="back33"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/the-sun.png"><figure id="back34"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/the-emperor.png"><figure id="back35"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/the-chariot.png"><figure id="back36"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/death.png"><figure id="back37"></figure></a>
+<a class="fancybox" data-fancybox="gallery3" href="../img/the-moon.png"><figure id="back38"></figure></a>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Web Design Inspiration</title>
+	<meta charset="utf-8">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet-web-design-inspiration.css">
+
+
+
+</head>
+
+<!--jQuery for mouse animation-->
+
+<body onload = "followMouse();">
+
+     <div class="wrap">
+          <div id="ball"></div>
+     </div>
+
+     <script>
+
+     var $ = document.querySelector.bind(document);
+     var $on = document.addEventListener.bind(document);
+
+     var xmouse, ymouse;
+     $on('mousemove', function (e) {
+          xmouse = e.clientX || e.pageX;
+          ymouse = e.clientY || e.pageY;
+     });
+
+     var ball = $('#ball');
+     var x = void 0,
+          y = void 0,
+          dx = void 0,
+          dy = void 0,
+          tx = 0,
+          ty = 0,
+          key = -1;
+
+     var followMouse = function followMouse() {
+          key = requestAnimationFrame(followMouse);
+
+          if(!x || !y) {
+               x = xmouse;
+               y = ymouse;
+          } else {
+               dx = (xmouse - x) * 0.125;
+               dy = (ymouse - y) * 0.125;
+               if(Math.abs(dx) + Math.abs(dy) < 0.1) {
+                    x = xmouse;
+                    y = ymouse;
+               } else {
+                    x += dx;
+                    y += dy;
+               }
+          }
+          ball.style.left = x + 'px';
+          ball.style.top = y + 'px';
+     };
+
+     </script>
+
+    <!--jQuery Hosted Library via Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--jQuery for hamburger button-->
+       <script
+  src="https://code.jquery.com/jquery-3.4.0.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.menu').click(function(){
+        $('ul').toggleClass('active');
+      });
+    });
+  </script>
+
+<!--jQuery Library Hosted Locally-->
+	<script src="../js/jquery-3.3.1.min.js"></script>
+<!--jQuery Hosted Library via CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+  		if (screen.width >= 767){
+  		$('#website-one').hide();
+  		$('#asterisk-one').mouseenter(function(){
+  			$('#website-one').show();
+  		$('#asterisk-one').mouseleave(function(){
+  			$('#website-one').hide();
+  		});
+  		});
+  		$('#website-two').hide();
+  		$('#asterisk-two').mouseenter(function(){
+  			$('#website-two').show();
+  		$('#asterisk-two').mouseleave(function(){
+  			$('#website-two').hide();
+  		});
+  		});
+  		$('#website-three').hide();
+  		$('#asterisk-three').mouseenter(function(){
+  			$('#website-three').show();
+  		$('#asterisk-three').mouseleave(function(){
+  			$('#website-three').hide();
+  		});
+  		});
+  		$('#website-four').hide();
+  		$('#asterisk-four').mouseenter(function(){
+  			$('#website-four').show();
+  		$('#asterisk-four').mouseleave(function(){
+  			$('#website-four').hide();
+  		});
+  		});
+  		$('#website-five').hide();
+  		$('#asterisk-five').mouseenter(function(){
+  			$('#website-five').show();
+  		$('#asterisk-five').mouseleave(function(){
+  			$('#website-five').hide();
+  		});
+  		});
+  			$('#website-six').hide();
+  		$('#asterisk-six').mouseenter(function(){
+  			$('#website-six').show();
+  		$('#asterisk-six').mouseleave(function(){
+  			$('#website-six').hide();
+  		});
+  		});
+  			$('#website-seven').hide();
+  		$('#asterisk-seven').mouseenter(function(){
+  			$('#website-seven').show();
+  		$('#asterisk-seven').mouseleave(function(){
+  			$('#website-seven').hide();
+  		});
+  		});
+ 
+  		}
+  	});
+  </script>
+
+
+
+  <nav>
+  	<div class="toggle">
+  		<i class="fas fa-bars menu"></i>
+  	</div>
+    <ul>	
+    <li class="name">Ally Emma Satterfield</li>
+      <li><a href="../index.html#logo-section">Home</a></li>
+      <li><a href="../index.html#website-work-intro">Web Design Portfolio</a></li>
+      <li><a href="http://www.allysatterfield.com/" target="_blank">Other Works Portfolio</a></li>
+      <li><a href="#main-section">Inspiration</a></li>
+    </ul>
+  </nav>
+
+<section id="main-section">
+
+
+<div id="web-header">
+	<a href="https://angle2.agency/" target="_blank"><div id="asterisk-one">
+	</div></a>
+	<div id="website-one">
+	</div>
+	<a href="https://kota.co.uk/" target="_blank"><div id="asterisk-two">
+	</div></a>
+	<div id="website-two">
+	</div>
+</div>
+
+
+
+<div id="design-header">
+	<div id="asterisk-what">
+	</div>
+	<a href="https://ironcitybeer.com/" target="_blank"><div id="asterisk-three"></div></a>
+	<div id="website-three">
+	</div>
+		<a href="http://www.mmi.iut-tlse3.fr/" target="_blank"><div id="asterisk-four"></div></a>
+	<div id="website-four">
+	</div>
+</div>
+
+<div id="inspiration-header">
+	<div id="asterisk-what-two"></div>
+		<a href="https://www.justinewargnier.com/" target="_blank"><div id="asterisk-five"></div></a>
+	<div id="website-five">
+	</div>
+		<a href="https://www.fabiofantolino.com/en" target="_blank"><div id="asterisk-six"></div></a>
+	<div id="website-six">
+	</div>
+	<a href="http://www.albergraphics.com/" target="_blank"><div id="asterisk-seven"></div></a>
+	<div id="website-seven"></div>
+	
+</div>
+
+<a href="https://angle2.agency/" target="_blank"><div id="website-one-smaller"></div></a>
+<a href="https://kota.co.uk/" target="_blank"><div id="website-two-smaller"></div></a>
+<a href="https://ironcitybeer.com/" target="_blank"><div id="website-three-smaller"></div></a>
+<a href="http://www.mmi.iut-tlse3.fr/" target="_blank"><div id="website-four-smaller"></div></a>
+<a href="https://www.justinewargnier.com/" target="_blank"><div id="website-five-smaller"></div></a>
+<a href="https://www.fabiofantolino.com/en" target="_blank"><div id="website-six-smaller"></div></a>
+<a href="http://www.albergraphics.com/" target="_blank"><div id="website-seven-smaller"></div></a>
+
+
+
+</section>
+
+</body>
+</html>
